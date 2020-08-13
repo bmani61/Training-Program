@@ -1,0 +1,15 @@
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.deps.json
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.runtimeconfig.json
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.runtimeconfig.dev.json
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.csprojAssemblyReference.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.AssemblyInfoInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.AssemblyInfo.cs
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.csproj.CopyComplete
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Persistance\obj\Debug\netcoreapp3.1\TrainingProgram.Persistance.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Services.deps.json
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Services.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Services.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\bin\Debug\netcoreapp3.1\TrainingProgram.Persistance.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.csprojAssemblyReference.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.AssemblyInfoInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.AssemblyInfo.cs
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.csproj.CoreCompileInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.csproj.CopyComplete
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Services\obj\Debug\netcoreapp3.1\TrainingProgram.Services.pdb

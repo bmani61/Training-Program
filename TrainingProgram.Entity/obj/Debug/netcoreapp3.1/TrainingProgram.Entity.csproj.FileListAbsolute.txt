@@ -1,0 +1,9 @@
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.deps.json
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\bin\Debug\netcoreapp3.1\TrainingProgram.Entity.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.AssemblyInfoInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.AssemblyInfo.cs
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.dll
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.pdb
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram.Entity\obj\Debug\netcoreapp3.1\TrainingProgram.Entity.csprojAssemblyReference.cache

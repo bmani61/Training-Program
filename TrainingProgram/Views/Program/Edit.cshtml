@@ -1,0 +1,35 @@
+﻿@model ProgramEditViewModel
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            
+            <form method="post" asp-action="Edit">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="FLDPROGRAMCODE"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="FLDPROGRAMCODE" class="form-control" placeholder="Enter Program code" />
+                        <span asp-validation-for="FLDPROGRAMCODE" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="FLDPROGRAMNAME"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="FLDPROGRAMNAME" class="form-control" placeholder="Enter Program name" />
+                        <span asp-validation-for="FLDPROGRAMNAME" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-rounded btn-success ">Update</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button asp-action="Index" class="btn btn-rounded btn-primary "> Back</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

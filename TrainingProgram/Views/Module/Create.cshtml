@@ -1,0 +1,47 @@
+﻿@model ModuleCreateViewModel
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <form method="post" asp-action="Create">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label >Program</label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <select asp-for="FLDPROGRAMID"
+                                asp-items="@(new SelectList(Model.Programs, "FLDPROGRAMID", "FLDPROGRAMNAME"))">
+                            <option s>Select</option>
+                        </select>
+                        <span asp-validation-for="FLDPROGRAMID" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="FLDMODULECODE"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="FLDMODULECODE" class="form-control" placeholder="Enter Module code" />
+                        <span asp-validation-for="FLDMODULECODE" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label asp-for="FLDMODULENAME"></label>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input asp-for="FLDMODULENAME" class="form-control" placeholder="Enter Module name" />
+                        <span asp-validation-for="FLDMODULENAME" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-rounded btn-success ">Create</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button asp-action="Index" asp-controller="Module" class="btn btn-rounded btn-primary "> Back</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

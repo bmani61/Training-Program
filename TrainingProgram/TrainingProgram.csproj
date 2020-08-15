@@ -21,4 +21,8 @@
     <ProjectReference Include="..\TrainingProgram.Services\TrainingProgram.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Framework\TagHelpers\" />
+  </ItemGroup>
+
 </Project>

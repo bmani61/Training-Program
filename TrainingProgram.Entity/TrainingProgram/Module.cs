@@ -11,7 +11,7 @@ namespace TrainingProgram.Entity
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid FLDMODULEID { get; set; }
         [Required,ForeignKey("Program")]
-        public Guid FLDPROGRAMID { get; set; }
+        public Guid? FLDPROGRAMID { get; set; }
         [Required, MaxLength(50)]
         public string  FLDMODULECODE{ get; set; }
         [Required, MaxLength(500)]

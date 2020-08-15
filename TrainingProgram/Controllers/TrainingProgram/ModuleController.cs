@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using TrainingProgram.Entity;
 using TrainingProgram.Models;
 using TrainingProgram.Services;
 namespace TrainingProgram.Controllers.TrainingProgram
@@ -21,19 +22,8 @@ namespace TrainingProgram.Controllers.TrainingProgram
             _programService = ProgramService;
         }
 
-        //[HttpGet, HttpPost]
-        //public IActionResult Index(Entity.Program Program)
-        //{
-        //    var Module = _moduleService.GetAllModules(Program).Select(Module => new ModuleIndexViewModel
-        //    {
-        //        FLDPROGRAMID = Module.FLDPROGRAMID,
-        //        FLDMODULECODE = Module.FLDMODULECODE,
-        //        FLDMODULENAME = Module.FLDMODULENAME,
-        //    }).ToList();
-        //    ViewBag.ProgramsList = _programService.GetAllPrograms();
-        //    return View(Module);
-        //}
-        [HttpGet, HttpPost]
+        
+        [HttpGet]
         public IActionResult Index()
         {
             var Modules =  new ModuleIndexViewModel
@@ -43,6 +33,53 @@ namespace TrainingProgram.Controllers.TrainingProgram
                 };
             
             return View(Modules);
-    }
+        }
+        [HttpPost]
+        public IActionResult Index(ModuleIndexViewModel module)
+        {
+            var Modules = new ModuleIndexViewModel
+            {
+                Modules = _moduleService.GetAllModules().Where( m => m.FLDPROGRAMID == module.FLDPROGRAMID).ToList(),
+                Programs = _programService.GetAllPrograms(),
+                FLDPROGRAMID = module.FLDPROGRAMID
+
+            };
+
+            return View(Modules);
+        }
+
+        [HttpGet]
+        public IActionResult Create(Guid? id)
+        {
+            var model = new ModuleCreateViewModel()
+            {
+                FLDPROGRAMID = id,
+                Programs = _programService.GetAllPrograms()
+            };
+            return View(model);
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(ModuleCreateViewModel model)
+        {
+            model.Programs = _programService.GetAllPrograms();
+            if (ModelState.IsValid)
+            {
+                var Module = new Module
+                {
+
+                    FLDMODULECODE = model.FLDMODULECODE,
+                    FLDMODULENAME = model.FLDMODULENAME,
+                    FLDPROGRAMID = model.FLDPROGRAMID
+
+
+                };
+
+                await _moduleService.CreateAsync(Module);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
+
+        }
     }
 }

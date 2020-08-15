@@ -98,3 +98,4 @@ C:\Users\Manikanth\source\repos\Training Program\TrainingProgram\obj\Debug\netco
 C:\Users\Manikanth\source\repos\Training Program\TrainingProgram\obj\Debug\netcoreapp3.1\TrainingProgram.pdb
 C:\Users\Manikanth\source\repos\Training Program\TrainingProgram\obj\Debug\netcoreapp3.1\TrainingProgram.genruntimeconfig.cache
 C:\Users\Manikanth\source\repos\Training Program\TrainingProgram\obj\Debug\netcoreapp3.1\Razor\Views\Module\Index.cshtml.g.cs
+C:\Users\Manikanth\source\repos\Training Program\TrainingProgram\obj\Debug\netcoreapp3.1\Razor\Views\Module\Create.cshtml.g.cs

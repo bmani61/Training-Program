@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using TrainingProgram.Entity;
 using TrainingProgram.Models;
 using TrainingProgram.Services;
@@ -81,5 +82,52 @@ namespace TrainingProgram.Controllers.TrainingProgram
             return View(model);
 
         }
+        [HttpGet]
+        public IActionResult Edit(Guid id)
+        {
+            var module =  _moduleService.GetModuleById(id);
+
+            if (module == null)
+            {
+                return NotFound();
+            }
+            else {
+                var model = new ModuleEditViewModel()
+                {
+
+                    FLDMODULEID = id,
+                    FLDMODULECODE = module.FLDMODULECODE,
+                    FLDMODULENAME = module.FLDMODULENAME,
+                    FLDPROGRAMID = module.FLDPROGRAMID,
+                    Programs =  _programService.GetAllPrograms()
+                };
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ModuleEditViewModel model, Guid id)
+        {
+            model.Programs = _programService.GetAllPrograms();
+            
+            if (ModelState.IsValid)
+            {
+                var Module = new Module
+                {
+
+                    FLDMODULECODE = model.FLDMODULECODE,
+                    FLDMODULENAME = model.FLDMODULENAME,
+                    FLDPROGRAMID = model.FLDPROGRAMID
+
+
+                };
+
+                await _moduleService.UpdateAsync(Module);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
+        }
+
+
     }
 }

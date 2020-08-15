@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using TrainingProgram.Entity;
@@ -9,14 +10,10 @@ namespace TrainingProgram.Models
     public class ModuleIndexViewModel
     {
 
-        public Guid FLDMODULEID { get; set; }
+        public IEnumerable<Module> Modules { get; set; }
 
-        public Guid FLDPROGRAMID { get; set; }
-
-        public string FLDMODULECODE { get; set; }
-
-        public string FLDMODULENAME { get; set; }
-
-      
+        public IEnumerable<Entity.Program> Programs { get; set; }
+        [DisplayName("Program")]
+        public Guid? FLDPROGRAMID { get; set; }
     }
 }

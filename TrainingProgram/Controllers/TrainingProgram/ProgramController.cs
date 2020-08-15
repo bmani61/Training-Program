@@ -23,12 +23,10 @@ namespace TrainingProgram.Controllers
         [HttpGet,HttpPost]
         public IActionResult Index()
         {
-            var Programs = _programService.GetAllPrograms().Select(Program => new ProgramIndexViewModel
+            var Programs = new ProgramIndexViewModel()
             {
-               FLDPROGRAMID = Program.FLDPROGRAMID,
-               FLDPROGRAMCODE = Program.FLDPROGRAMCODE,
-               FLDPROGRAMNAME = Program.FLDPROGRAMNAME
-            }).ToList();
+                Programs = _programService.GetAllPrograms()
+            };
             return View(Programs);
         }
         

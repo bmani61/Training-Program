@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProgramIndexViewModel>
+﻿@model ProgramIndexViewModel
 
 <div class="row">
     <div class="col col-md-12 table-responsive-md">
@@ -15,7 +15,7 @@
             </thead>
             <tbody>
 
-                @foreach (var item in Model)
+                @foreach (var item in Model.Programs)
                 {
                     <tr>
                         <td>

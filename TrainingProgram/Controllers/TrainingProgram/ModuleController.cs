@@ -36,14 +36,13 @@ namespace TrainingProgram.Controllers.TrainingProgram
         [HttpGet, HttpPost]
         public IActionResult Index()
         {
-            var Module = _moduleService.GetAllModules().Select(Module => new ModuleIndexViewModel
+            var Modules =  new ModuleIndexViewModel
             {
-                FLDPROGRAMID = Module.FLDPROGRAMID,
-                FLDMODULECODE = Module.FLDMODULECODE,
-                FLDMODULENAME = Module.FLDMODULENAME,
-            }).ToList();
-            ViewBag.ProgramsList = _programService.GetAllPrograms();
-            return View(Module);
-        }
+                Modules = _moduleService.GetAllModules(),
+                Programs = _programService.GetAllPrograms()
+                };
+            
+            return View(Modules);
+    }
     }
 }
